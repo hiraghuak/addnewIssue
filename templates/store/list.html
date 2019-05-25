@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+<table class="table">
+    <tr>
+        <th>Book</th>
+        <th>Author</th>
+         <th>Author</th>
+    </tr>
+{% for book in books %}
+    <tr>
+
+      
+        <td>{{book.myuser}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.get_authors}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
